@@ -15,15 +15,13 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <build>
-    <finalName>testwebapp</finalName>
-  </build>
+  
 
     <profiles>
         <profile>
             <id>openshift</id>
             <build>
-                <finalName>{APP_NAME}</finalName>
+                <finalName>testwebapp</finalName>
                 <plugins>
                     <plugin>
                         <artifactId>maven-war-plugin</artifactId>
